@@ -1,0 +1,17 @@
+CREATE TABLE Show (
+    Show_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Theatre_ID INT NOT NULL,
+    Movie_ID INT NOT NULL,
+    Show_Date DATE NOT NULL,
+    Show_Time TIME NOT NULL,
+    FOREIGN KEY (Theatre_ID) REFERENCES Theatre(Theatre_ID),
+    FOREIGN KEY (Movie_ID) REFERENCES Movie(Movie_ID)
+);
+
+
+// entries
+
+INSERT INTO Show (Theatre_ID, Movie_ID, Show_Date, Show_Time) VALUES 
+(1, 1, '2024-06-16', '18:30:00'),
+(1, 2, '2024-06-16', '21:00:00'),
+(2, 1, '2024-06-16', '19:00:00');

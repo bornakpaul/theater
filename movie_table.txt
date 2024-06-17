@@ -1,0 +1,14 @@
+CREATE TABLE Movie (
+    Movie_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Movie_Title VARCHAR(255) NOT NULL,
+    Genre VARCHAR(50) NOT NULL,
+    Duration INT NOT NULL,
+    Rating DECIMAL(3, 2) NOT NULL
+);
+
+
+// entries
+
+INSERT INTO Movie (Movie_Title, Genre, Duration, Rating) VALUES 
+('Inception', 'Sci-Fi', 148, 8.8),
+('The Dark Knight', 'Action', 152, 9.0);

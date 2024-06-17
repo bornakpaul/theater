@@ -1,0 +1,14 @@
+CREATE TABLE Booking (
+    Booking_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Show_ID INT NOT NULL,
+    User_ID INT NOT NULL,
+    Seats_Booked INT NOT NULL,
+    FOREIGN KEY (Show_ID) REFERENCES Show(Show_ID),
+    FOREIGN KEY (User_ID) REFERENCES User(User_ID)
+);
+
+// entries
+
+INSERT INTO Booking (Show_ID, User_ID, Seats_Booked) VALUES 
+(1, 1, 2),
+(2, 2, 3);

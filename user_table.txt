@@ -1,0 +1,12 @@
+CREATE TABLE User (
+    User_ID INT PRIMARY KEY AUTO_INCREMENT,
+    User_Name VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Phone_Number VARCHAR(15) NOT NULL
+);
+
+// entries
+
+INSERT INTO User (User_Name, Email, Phone_Number) VALUES 
+('John Doe', 'john@example.com', '1234567890'),
+('Jane Smith', 'jane@example.com', '0987654321');

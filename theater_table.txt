@@ -1,0 +1,12 @@
+CREATE TABLE Theatre (
+    Theatre_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Theatre_Name VARCHAR(255) NOT NULL,
+    Location VARCHAR(255) NOT NULL
+);
+
+// entries
+
+INSERT INTO Theatre (Theatre_Name, Location) VALUES 
+('Cineplex', 'Downtown'),
+('Movieworld', 'Uptown');
+

@@ -1,0 +1,11 @@
+SELECT 
+    s.Show_ID, 
+    m.Movie_Title, 
+    s.Show_Date, 
+    s.Show_Time 
+FROM 
+    Show s 
+    JOIN Movie m ON s.Movie_ID = m.Movie_ID 
+WHERE 
+    s.Show_Date = '2024-06-16' 
+    AND s.Theatre_ID = 1;
